@@ -8,7 +8,7 @@
  *
  *  Cyclic Web App URL: https://witty-teal-badger.cyclic.app/
  *
- *  GitHub Repository URL: https://github.com/Jappinder57/Web322-app
+ *  GitHub Repository URL: https://github.com/Jappinder57/Web322-app-A3
  *
  ********************************************************************************/
 
