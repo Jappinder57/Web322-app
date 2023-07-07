@@ -6,9 +6,9 @@
  *
  *  Name: Jappinderdeep Singh Student ID: 166128215 Date: 06/07/2023
  *
- *  Cyclic Web App URL: ________________________________________________________
+ *  Cyclic Web App URL: https://witty-teal-badger.cyclic.app/
  *
- *  GitHub Repository URL: ______________________________________________________
+ *  GitHub Repository URL: https://github.com/Jappinder57/Web322-app
  *
  ********************************************************************************/
 
