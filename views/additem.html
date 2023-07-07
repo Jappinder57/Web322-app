@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- Linking Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <title>Add Item</title>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle collapsed"
+            data-toggle="collapse"
+            data-target="#bs-example-navbar-collapse-1"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <span class="navbar-brand">WEB322(A3): Jappinderdeep Singh</span>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/about">About</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="/items">Items</a></li>
+            <li><a href="/categories">Categories</a></li>
+            <li class="active"><a href="/items/add">Add Items</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Home Page -->
+    <div class="container" style="padding-top: 60px">
+      <div class="row">
+        <div class="col-md-12">
+          <h2>Add Item</h2>
+          <br />
+          <form method="item" action="/items/add" enctype="multipart/form-data">
+            <fieldset>
+              <legend>Feature Image</legend>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <input
+                      class="form-control"
+                      id="featureImage"
+                      name="featureImage"
+                      type="file"
+                    />
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+            <br />
+            <fieldset>
+              <legend>Item Content</legend>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <label for="title">Title:</label>
+                    <input
+                      class="form-control"
+                      id="title"
+                      name="title"
+                      type="text"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <label for="body">Body:</label>
+                    <textarea
+                      class="form-control"
+                      id="body"
+                      name="body"
+                      rows="15"
+                    ></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="category">Category:</label>
+                    <select class="form-control" name="category" id="category">
+                      <option value="1">Home, Garden</option>
+                      <option value="2">
+                        Electronics, Computers, Video Games
+                      </option>
+                      <option value="3">Clothing</option>
+                      <option value="4">Sports & Outdoors</option>
+                      <option value="5">Pets</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="category">Visibility:</label>
+                    <div class="checkbox">
+                      <label>
+                        <input
+                          type="checkbox"
+                          name="published"
+                          id="published"
+                        />
+                        Published
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+            <hr />
+            <input
+              type="submit"
+              class="btn btn-primary pull-right"
+              value="Add Item"
+            /><br /><br /><br />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Latest compiled and minified Bootstrap 5 JavaScript -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-XXXXXX"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
